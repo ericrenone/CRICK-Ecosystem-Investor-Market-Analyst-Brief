@@ -7,7 +7,7 @@
 
 Biology AI is the next frontier compute wave — and it is structurally mismatched with the silicon that currently runs it.
 
-Every major biology AI breakthrough of the past three years — AlphaFold 3 (Google DeepMind, *Nature* 2024), Boltz-2 (MIT + Recursion, 2025), Evo 2 (Arc Institute + NVIDIA, *Nature* 2026), RFdiffusion3 (November 2025), State and Stack virtual-cell models (Arc Institute, 2025–2026) — converges on the same five computational operations. None of those five operations is a matrix multiplication. Yet every one of them is running today on GPU and TPU silicon designed to maximize matrix multiplication. The mismatch costs 3–12× per operation, compounding across workloads. It does not shrink with process-node improvements. It is structural.
+Every major biology AI breakthrough of the past three years — AlphaFold 3 (Google DeepMind, *Nature* 2024), Boltz-2 ( + Recursion, 2025), Evo 2 (Arc Institute + NVIDIA, *Nature* 2026), RFdiffusion3 (November 2025), State and Stack virtual-cell models (Arc Institute, 2025–2026) — converges on the same five computational operations. None of those five operations is a matrix multiplication. Yet every one of them is running today on GPU and TPU silicon designed to maximize matrix multiplication. The mismatch costs 3–12× per operation, compounding across workloads. It does not shrink with process-node improvements. It is structural.
 
 **CRICK** is the substrate, software, and strategic playbook built for the workload these architectures actually perform.
 
@@ -76,7 +76,7 @@ A 5× overhead on 6% of $200B in global AI compute is ~$60B in structural waste 
 TSMC N2 to N2P buys ~30% transistor density improvement. It buys 0% reduction in an architectural mismatch. After the crossover point, additional process-node generations widen the gap with native-substrate competitors rather than closing it.
 
 **3. The strategic-priority shift hardens substrate decisions.**  
-The 2028–2029 cohort of FDA-cleared diagnostics, EMA-authorized therapeutics, and sovereign biomedical compute commitments (NHS, EU-1+ Million Genomes, NIH All of Us, Japan AMED, KAUST) will set the substrate base for the 2030s. Once a biology AI product enters clinical deployment at population scale, the substrate decision becomes a regulatory and reimbursement commitment — switching cost rises to multi-year, multi-billion-dollar territory.
+The 2028–2029 cohort of FDA-cleared diagnostics, EMA-authorized therapeutics, and sovereign biomedical compute comments (NHS, EU-1+ Million Genomes, NIH All of Us, Japan AMED, KAUST) will set the substrate base for the 2030s. Once a biology AI product enters clinical deployment at population scale, the substrate decision becomes a regulatory and reimbursement comment — switching cost rises to multi-year, multi-billion-dollar territory.
 
 ---
 
@@ -102,7 +102,7 @@ Crick-1 is a **pair-tensor-native** compute substrate. Its fundamental operation
 ### Layer 2 — Crick-1 Chip Lineage
 Crick-1 is the third chip in a coherent architectural progression:
 
-- **Banach-1 (2026)** — promotes fixed-point iteration to the architectural primitive; handles iterative model inference natively. 12.3 PFLOPS FP4, 384 MB SRAM, 288 GB HBM3e.
+- **Banach-1 (2026)** — promotes fixed-point iteration to the architectural priive; handles iterative model inference natively. 12.3 PFLOPS FP4, 384 MB SRAM, 288 GB HBM3e.
 - **Volder-1 (2026)** — collapses matrix multiplication into rotation-based arithmetic for exact geometric computation. 9.8 PFLOPS FP4-equivalent, 645 MB SRAM, 9.6 TB/s bandwidth.
 - **Crick-1 (2026)** — adds the pair-tensor iteration as the native biology operation, inheriting and extending both prior chips. 8.2 PFLOPS FP4 pair-tensor, 873 MB SRAM, 384 GB HBM4, 12.8 TB/s.
 
@@ -114,7 +114,7 @@ An open compiler that ingests standard PyTorch and JAX biology models — AlphaF
 This is the CUDA equivalent for biology: the developer adoption flywheel that compounds into multi-year switching cost.
 
 ### Layer 4 — Open-Source Software Stack
-Four canonical modules covering the full central dogma pipeline, MIT-licensed:
+Four canonical modules covering the full central dogma pipeline, -licensed:
 
 - **CRICK-DNA** — Evo 2 (40B parameters, 1M-token genomic context), HyenaDNA, Nucleotide Transformer, Caduceus, Borzoi, Enformer, CodonFM (Arc + NVIDIA, 2026)
 - **CRICK-RNA** — RiNALMo (650M parameters), AIDO.RNA (1.6B, state-of-the-art on 24/26 RNA tasks), RNA-FM, RhoFold+, gRNAde (ICLR 2025 Spotlight, ribozyme-validated inverse design), full splicing, epitranscriptome, and therapeutic mRNA tooling
@@ -129,7 +129,7 @@ The open-source posture is rational, not altruistic. In biology AI, data provena
 
 NVIDIA holds approximately 85% of the current frontier biology compute install base via raw GPU dominance and the BioNeMo platform. That share is the principal asset under competitive attack.
 
-| Substrate | Primary primitive | Biology-effective $/TFLOPS-eq-W | Strategic posture |
+| Substrate | Primary priive | Biology-effective $/TFLOPS-eq-W | Strategic posture |
 |-----------|-----------------|--------------------------------|------------------|
 | **Crick-1** | Pair-tensor iteration | **~$0.18** | Biology-native, full stack |
 | Volder-1 | Rotation iteration | ~$0.32 | Geometric/hyperbolic workloads |
@@ -140,7 +140,7 @@ NVIDIA holds approximately 85% of the current frontier biology compute install b
 | Cerebras WSE-3 | Matmul (wafer-scale) | ~$0.61 | Long-context/memory-bandwidth niche |
 | NVIDIA GB300 | Matmul | ~$0.78 | General-purpose dominance |
 
-**Anthropic's own May 2026 behavior is the leading indicator.** The company is in active talks with Microsoft to add Maia 200 as a fourth inference substrate alongside AWS Trainium3, Google TPU Ironwood, and NVIDIA Blackwell. A frontier laboratory running at $30B+ annual run-rate is already buying the right substrate for the right workload regardless of single-vendor commitments. Biology workloads, with their five distinct structural mismatches, are the natural next layer of specialization.
+**Anthropic's own May 2026 behavior is the leading indicator.** The company is in active talks with Microsoft to add Maia 200 as a fourth inference substrate alongside AWS Trainium3, Google TPU Ironwood, and NVIDIA Blackwell. A frontier laboratory running at $30B+ annual run-rate is already buying the right substrate for the right workload regardless of single-vendor comments. Biology workloads, with their five distinct structural mismatches, are the natural next layer of specialization.
 
 The competitive risk is explicit: NVIDIA Rubin or post-Rubin generations could add dedicated pair-tensor extensions, compressing the advantage from 4–12× to 2–4× and narrowing the moat window from 2026–2029 to 2026–2027. This is publicly observable. The window must be built and defended before the matmul ecosystem's defensive response ships.
 
@@ -158,7 +158,7 @@ Five compounding advantages, each with a defined time-to-replicate:
 
 **4. Data and benchmark partnerships** — RNAcentral (release 26: 45M sequences, 52 expert databases, 204 organisms), Rfam, PDB, AlphaFold Protein Structure Database, Tahoe-100M, ENCODE, Human Cell Atlas. The benchmark-and-leaderboard control point is the strategic chokepoint in any platform transition.
 
-**5. Pharma and clinical deployment commitments** — co-development agreements with top-5 pharma, top-5 AI biotech, and 2–3 hyperscalers; design wins in 3–5 sovereign biomedical compute programs (NHS, EU-1+ Million Genomes, Japan AMED, KAUST, NIH All of Us). Each is a 5–10-year commitment with single-digit compute-share defended by clinical and regulatory switching cost.
+**5. Pharma and clinical deployment comments** — co-development agreements with top-5 pharma, top-5 AI biotech, and 2–3 hyperscalers; design wins in 3–5 sovereign biomedical compute programs (NHS, EU-1+ Million Genomes, Japan AMED, KAUST, NIH All of Us). Each is a 5–10-year comment with single-digit compute-share defended by clinical and regulatory switching cost.
 
 ---
 
