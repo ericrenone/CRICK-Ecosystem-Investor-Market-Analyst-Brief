@@ -1,0 +1,1 @@
+# CRICK-Ecosystem-Investor-Market-Analyst-Brief
